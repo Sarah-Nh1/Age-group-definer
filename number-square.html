@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <head>
     <title>Number and square</title>
+    <meta charset="UTF-8">
 </head>
 
 <body>
@@ -11,25 +12,20 @@ function square(a)
 {
     return a*a;
 }
-
-var numsqs = {
-    1: square(1),
-    2: square(2),
-    3: square(3),    
-    4: square(4),
-    5: square(5),
-    6: square(6),
-    7: square(7),
-    8: square(8),
-    9: square(9),
-    10: square(10),
-    11: square(11),
-    12: square(12),
-    13: square(13),
-    14: square(14),
-    15: square(15)
+function name(z)
+{
+    return z;
 }
-console.log(numsqs);
+
+for(var r = 2 ; r < 15; r++)
+{
+    var b = name(r);
+    var e = square(r);
+    var result = { b : e};
+    console.log(result);
+}
+
+
 </script>
 </body>
 </html>
