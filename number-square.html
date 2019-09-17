@@ -12,22 +12,18 @@ function square(a)
 {
     return a*a;
 }
-function name(z)
-{
-    return z;
-}
+
+
+var obj = {}
 
 for(var r = 2 ; r < 15; r++)
 {
-    var b = name(r);
-    var e = square(r);
-    //var result = { b : e};
-    //console.log(result);
-    console.log(b + " : " + e);
     
+    // obj.name = square(r);
+    obj[r] = square(r);    
+   
 }
-
-
+console.log(obj);
 </script>
 </body>
 </html>
